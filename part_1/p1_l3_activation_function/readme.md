@@ -124,6 +124,67 @@ The distinction is important:
 
 Another historically important activation function is the sigmoid function: $\sigma(z) = \frac{1}{1 + e^{-z}}$
 
+Here, e is a mathematical constant approximately equal to: $e \approx 2.71828$
+
+The sigmoid function converts every finite input into a value between 0 and 1.
+
+Examples, aproximately:
+
+- $\sigma(-2) \approx 0.119$
+- $\sigma(0) \approx 0.5$
+- $\sigma(2) \approx 0.881$
+
+Its output approaches 0 for large negative inputs and approaches 1 for large positive inputs:
+
+```
+output
+1 |                    ______
+  |                ___/
+  |             __/
+0.5|-----------/
+  |         __/
+  |     ___/
+0 |____/____________________> input
+              0
+```
+
+<br/>
+
+## ReLU versus sigmoid
+
+For now, the important differences are:
+
+| activation | definition             | output range        |
+| ---------- | ---------------------- | ------------------- |
+| Identity   | $z$                    | any real number     |
+| ReLU       | $max(0,z)$             | $0$ or greater      |
+| Sigmoid    | $\frac{1}{1 + e^{-z}}$ | between $0$ and $1$ |
+
+ReLU is commonly used inside neural networks because it is simple and works well in many situations.
+
+Sigmoid is useful when an output should behave somewhat like a value between “no” and “yes.”
+
+No activation function is universally correct. Its suitability depends on what a neuron or layer is supposed to represent.
+
+<br/>
+
+## Summary
+
+A neuron now has two clearly separated stages:
+
+1. $z = \sum_{i} x_i w_i + b$
+2. $y = f(z)$
+
+The main points are:
+
+- The weighted sum combines the inputs.
+- The activation function transforms the weighted sum.
+- The value before activation is commonly written as $z$.
+- Activation functions introduce nonlinearity.
+- Identity returns $z$ unchanged.
+- ReLU replaces negative values with zero.
+- Sigmoid maps values into the interval between $0$ and $1$.
+
 <br/>
 
 ---
