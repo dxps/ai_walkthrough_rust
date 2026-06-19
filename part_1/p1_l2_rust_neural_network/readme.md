@@ -1,9 +1,23 @@
 # Part 1, Lesson 2: Multiple inputs
 
-In Lesson 1, the neuron used one input: `y = w * x + b`
+In the previous lesson, the neuron used one input:
 
-Most useful neurons receive several inputs. The formula becomes: `y = w1 * x1 + w2 * x2 + ... + wn * xn + b`
-For three inputs: `y = w1 * x1 + w2 * x2 + w3 * x3 + b`
+$$
+y = wx + b
+$$
+
+Most useful neurons receive several inputs. The formula becomes:
+
+$$
+y = w_1x_1 + w_2x_2 + \dots + w_nx_n + b
+$$
+
+For three inputs:
+
+$$
+y = w_1x_1 + w_2x_2 + w_3x_3 + b
+$$
+
 Each input has its own weight.
 
 <br/>
@@ -28,7 +42,7 @@ w₃ = -1.0
 
 And a bias: `b = 2`
 
-The neuron calculates: `y = 0.5×2 + 1.0×3 + (−1.0)×4+2`
+The neuron calculates: `y = 0.5×2 + 1.0×3 + (−1.0)×4 + 2`
 
 Calculate each weighted input:
 
@@ -38,8 +52,8 @@ Calculate each weighted input:
 -1.0 × 4 = -4
 ```
 
-Add them together: `1 + 3 - 4 = 0`
-Then add the bias: `0 + 2 = 2`
+Add them together: `1 + 3 - 4 = 0`<br/>
+Then add the bias: `0 + 2 = 2`<br/>
 The neuron output is: `2`
 
 <br/>
@@ -70,14 +84,14 @@ input x₂ uses weight w₂
 input x₃ uses weight w₃
 ```
 
-The weight determines how strongly that particular input affects the output.
-A positive weight makes the input contribute positively.
-A negative weight makes the input contribute negatively.
+The weight determines how strongly that particular input affects the output.<br/>
+A positive weight makes the input contribute positively.<br/>
+A negative weight makes the input contribute negatively.<br/>
 A weight of zero causes the neuron to ignore that input.
 
 ### Weighted input
 
-A weighted input is an input multiplied by its corresponding weight: `wi * xi`
+A weighted input is an input multiplied by its corresponding weight: `wi * xi` <br/>
 ​
 For example:
 
@@ -116,3 +130,20 @@ Each input contributes differently. The weights allow the neuron to assign a dif
 A neuron with one input can only respond to one value.
 
 A neuron with several inputs can combine several pieces of information into one output.
+
+$$
+y = \sum_{i=1}^{n} w_i x_i + b
+$$
+
+<br/>
+
+---
+
+## Run
+
+To run both parts (the implementation and the tests), use:
+
+```
+cargo run
+cargo test
+```
