@@ -3,5 +3,5 @@
 version = 4
 
 [[package]]
-name = "p1_rust_neural_network"
+name = "p1_l2_multiple_inputs_neuron"
 version = "0.1.0"

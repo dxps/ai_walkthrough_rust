@@ -1,0 +1,6 @@
+[package]
+name = "p1_l2_multiple_inputs_neuron"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]

@@ -1,5 +1,5 @@
 [package]
-name = "p1_rust_neural_network"
+name = "p1_l1_simple_neuron"
 version = "0.1.0"
 edition = "2024"
 

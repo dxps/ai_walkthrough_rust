@@ -1,0 +1,9 @@
+[workspace]
+
+resolver = "3"
+
+members = [
+    "p1_l1_simple_neuron",
+    "p1_l2_multiple_inputs_neuron",
+    "p1_l3_activation_function",
+]
