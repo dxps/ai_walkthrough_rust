@@ -1,23 +1,4 @@
-# Part 1
-
-This part show what a neural network computes.
-
-It covers:
-
-- Input
-- Parameter
-- Weight
-- Bias
-- Neuron
-- Weighted sum
-- Activation function
-- Prediction
-
-The implementation contains one artificial neuron. No automatic differentiation, tensors or machine-learning libraries.
-
-So, basically it starts with one neuron and one calculation. No training yet.
-
-## What does a neuron calculate?
+# Part 1, Lesson 1: What does a neuron calculate?
 
 A basic artificial neuron computes `y = w * x + b`
 
