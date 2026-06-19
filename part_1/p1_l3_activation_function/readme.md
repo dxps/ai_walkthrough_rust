@@ -1,4 +1,4 @@
-# Part 1, Lesson 2: Multiple inputs
+# Part 1, Lesson 3: Activation function
 
 In the previous lesson, a neuron calculated a weighted sum:
 
@@ -15,7 +15,8 @@ where:
 
 An activation function adds one final operation: $y = f(z)$
 
-The weighted sum `z` is sometimes called the neuron's _pre-activation value_. The final result `y` is the neuron's _output_ or _activation_.
+The weighted sum `z` is sometimes called the neuron's _pre-activation value_. <br/>
+The final result `y` is the neuron's _output_ or _activation_.
 
 <br/>
 
